@@ -1,0 +1,219 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.sohoWikiVault {
+  .container {
+    width:100%;
+    //max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themePrimary;
+    padding: 3px;
+  }
+  .searchRow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    //padding: 3px;
+   // padding-bottom: 20px;
+  }
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg2;
+    // @include ms-xl8;
+    // @include ms-xlPush2;
+    // @include ms-lgPush1;
+  }
+  .columnLeft {
+    @include ms-Grid-col;
+    @include ms-lg10;
+  }
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+// custom CSS
+  // main Category 
+.mainCategory {
+  padding: 13px;
+    background: white;
+}
+// Sub Category
+.subCategory {
+  padding: 13px;
+  background: white;
+}
+.subCategorydiv {
+  //  border-style: groove;
+  //  border-width: 1px 0px 0px 0px;
+    color: antiquewhite;
+  //  border-color: $ms-color-themeTertiary;
+}
+// List View Control
+.listViewDiv {
+  padding: 1px 10px 10px 10px;
+}
+.iconImage{
+  max-width: 20px;
+  padding: 2px;
+}
+.searchTextBox {
+  padding-bottom: 20px;
+}
+.controlStyle {
+  max-width: 200px;
+}
+.headerCss {
+  font-weight: 700;
+  color: $ms-color-themePrimary;
+}
+.mainTab {
+  border-color: $ms-color-themePrimary;
+  border-width: 1px 1px 1px 1px;
+  border-style: groove;
+  min-height: 400px;
+}
+.permissionText {
+  color: $ms-color-themePrimary;
+  text-align: right;
+  padding-top: 3px;
+  font-size: 12px;
+}
+.pivot {
+  padding-top: 15px;
+}
+.icons {
+  height: 17px;
+  width: 22px;
+div{
+  i{
+    font-size: 18px;
+    font-weight: 700;
+    color: $ms-color-themePrimary; //#605e5c;
+    border: 1px;
+  }
+}
+}
+.editIcon {
+  height: 13px;
+  width: 13px;
+  
+div{
+  padding-left: 10px;
+  i{
+    font-size: 15px;
+    font-weight: bolder;
+    color: $ms-color-themePrimary;
+    border: 1px;
+  }
+}
+}
+.deleteIcon {
+  height: 15px;
+  width: 13px;
+div{
+  i{
+    font-size: 17px;
+    font-weight: bolder;
+    color:#da0404;
+    border: 1px;
+    padding-left: 20px;
+  }
+}
+}
+// table css
+table {
+  width: 100%;
+  color: #03787c;
+  font-size: 13px;
+  padding-top: 10px;
+}
+th {
+    text-align: left;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ddd;
+    box-sizing: border-box;
+    color:  $ms-color-themePrimary;;
+}
+td {
+  text-align: left;
+    padding: 4px;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(96, 94, 92);
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 12px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ddd;
+    box-sizing: border-box;
+}
+.hidden {
+  background-color: #fdebeb !important;
+}
+// tr:nth-child(even){background-color: #f2f2f2}
+.divStyle {
+overflow-x:auto;
+width: 801px;
+}
+//TextBox Css
+.mainSubCatTB {
+  width: 250px;
+}
+.mainSubCatOrderTB {
+  width: 250px;
+}
+.columnErrorlabelstyle {
+  font-weight: $ms-font-weight-semibold;
+  font-size: $ms-font-size-m;
+  min-height: 32px;
+  line-height: 32px;
+  margin: 0 4px;
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+  line-height: inherit;
+  color: #da0404;
+}
+.richtextStyle {
+  border: 1px solid rgb(96, 94, 92)
+ }
+ .AddAdminLinkstyle {
+  width: 100%;
+  font-weight: $ms-font-weight-semibold;
+  font-size: $ms-font-size-m;
+  min-height: 32px;
+  line-height: 32px;
+  margin: 0 4px;
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+  line-height: inherit;
+  color:$ms-color-themePrimary;
+  text-align: right;
+}
+}

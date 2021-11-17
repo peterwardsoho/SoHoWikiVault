@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "soho-wiki-vault-client-side-solution",
+    "id": "5f7d8d22-5636-44c8-860c-b807030e2e33",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/soho-wiki-vault.sppkg"
+  }
+}

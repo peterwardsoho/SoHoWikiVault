@@ -1,0 +1,91 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.wikiEditForm {
+    .container {
+        width:100%;
+        margin: 0px auto;
+        text-align: left !important;
+      }
+      .row {
+        @include ms-Grid-row;
+        @include ms-fontColor-white;
+    
+        padding: 3px;
+      }
+    // Wiki Form
+    .formColumn {
+      @include ms-Grid-col;
+      @include ms-lg4;
+      padding: 0px 10px;
+      // @include ms-xl8;
+      // @include ms-xlPush2;
+      // @include ms-lgPush1;
+    }
+    .formColumnWhole {
+      @include ms-Grid-col;
+      @include ms-lg6;
+      padding: 0px 10px;
+      color: black;
+    }
+    .buttomMainColumn {
+      @include ms-Grid-col;
+      @include ms-lg12;
+      padding: 0px 10px;
+      text-align: right;
+      // @include ms-xl8;
+      // @include ms-xlPush2;
+      // @include ms-lgPush1;
+    }
+      // buttons
+      .button {
+        margin:5px;
+        border: 1px;
+        border-color: "[theme: themeLight, default: #c7e0f4]";
+        border-style: groove;
+       }
+    .formRow {
+       @include ms-Grid-row;
+        @include ms-fontColor-white;
+        padding: 5px;
+    }
+    .mainformdiv {
+      border-color: "[theme: themePrimary, default: #c7e0f4]";
+      border-style: groove;
+      padding: 10px;
+      border-width: 1px;
+    }
+    .innercolumnleft {
+      @include ms-Grid-col;
+      @include ms-lg5;
+    }
+    .innercolumnright {
+      @include ms-Grid-col;
+      @include ms-lg7;
+    }
+    .columnlabelstyle {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      min-height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+      height: 100%;
+      line-height: inherit;
+    }
+    .columnErrorlabelstyle {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      min-height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+      height: 100%;
+      line-height: inherit;
+      color: #da0404;
+    }
+    .richtextStyle {
+      border: 1px solid rgb(96, 94, 92)
+     }
+}

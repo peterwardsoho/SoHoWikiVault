@@ -1,0 +1,236 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.viewWikiDetails {
+  .container {
+    max-width: 100%;
+    margin: 0px auto;
+  //  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeLight;
+    padding: 8px;
+  }
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+  .title {
+    @include ms-font-xl;
+    color: white;
+    font-weight: 600;
+    padding: 7px 7px 7px 14px;
+    background-color: $ms-color-themeSecondary;
+    border-radius: 3px;
+  }
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+  .maindiv {
+    padding: 13px;
+    background: white;
+    border-width: 2px;
+    border-style: groove;
+    border-color: $ms-color-themeTertiary;
+  }
+  .formrowTop{
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    padding: 4px 14px 4px 10px Important;
+    border-width: 1px 0px 1px 0px;
+    border-style: dashed;
+    border-color:$ms-color-themePrimary;
+  }
+  .formrow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    padding: 4px 14px 4px 10px Important;
+    border-width: 0px 0px 1px 0px;
+    border-style: dashed;
+    border-color:$ms-color-themePrimary;
+  }
+  .formrowSolid {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    padding: 4px 14px 4px 10px Important;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color:$ms-color-themePrimary;
+    background-color: $ms-color-themeLighter;
+    text-align: left;
+  }
+  .icons {
+    height: 17px;
+    width: 22px;
+  div{
+    i{
+      font-size: 18px;
+      font-weight: 700;
+      color: $ms-color-themePrimary; //#605e5c;
+      border: 1px;
+    }
+  }
+  }
+  .columnleft {
+    @include ms-Grid-col;
+    @include ms-lg5;
+    padding: 4px 10px 4px 4px;
+    color:$ms-color-themePrimary;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+  }
+  .columnright {
+    @include ms-Grid-col;
+    @include ms-lg7;
+    padding: 4px 4px 4px 10px;
+    color:$ms-color-themePrimary;
+    font-size: 13px;
+    border-width: 0px 0px 0px 1px;
+    border-style: dashed;
+    border-color: $ms-color-themePrimary;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  .redText {
+   color: #da0404;
+  }
+
+  .columnrightDesc {
+    // @include ms-Grid-col;
+    // @include ms-lg12;
+    color:$ms-color-themePrimary;
+    font-size: 13px;
+    word-wrap: break-word;
+    text-align: left;
+    height: 80px;
+    overflow: hidden;
+  }
+  .columnrightDescMore {
+    // @include ms-Grid-col;
+    // @include ms-lg12;
+    color:$ms-color-themePrimary;
+    font-size: 13px;
+    word-wrap: break-word;
+    text-align: left;
+    overflow: hidden;
+  }
+  .showAlltext {
+    text-align: right;
+    font-size: 11px;
+  }
+  .linkButton {
+      background: none!important;
+      border: none;
+      padding: 0!important;
+      /*optional*/
+      font-family: arial, sans-serif;
+      /*input has OS specific font-family*/
+      color: #069;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  .columnrightSolid {
+    @include ms-Grid-col;
+    @include ms-lg7;
+     padding: 4px 4px 4px 10px;
+     color:$ms-color-themePrimary;
+     font-size: 13px;
+     border-width: 0px 0px 0px 1px;
+    border-style: solid;
+    border-color: $ms-color-themePrimary;
+    word-wrap: break-word;
+  }
+  .iconImage{
+    max-width: 20px;
+  }
+  .home{
+    @include ms-Grid-col;
+    @include ms-lg12;
+    color: $ms-color-themePrimary;
+    text-align: left;
+    padding-top: 3px;
+    font-size: 12px;
+  }
+  .modifiedDetails{
+    @include ms-Grid-col;
+    @include ms-lg12;
+    color: $ms-color-themePrimary;
+    text-align: right;
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .fileButton {
+    height: 17px;
+    width: 22px;
+  div{
+    i{
+      font-size: 12px;
+      font-weight: bolder;
+      border: 1px;
+    }
+  }
+}
+}
+.rowButton {
+  @include ms-Grid-row;
+  @include ms-fontColor-white;
+  background-color: $ms-color-themeLight;
+  padding: 0px 8px 5px 8px;
+}
+.rowTop {
+  @include ms-Grid-row;
+  @include ms-fontColor-white;
+  background-color: $ms-color-themeLight;
+}
+.permissionText {
+  color: #da0404;
+  text-align: right;
+  // padding-top: 3px;
+  font-size: 12px;
+ // padding-top: 10px;
+}
